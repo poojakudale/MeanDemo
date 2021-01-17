@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>    
+	function Student() {
+		this.first = 'Johny';
+		this.gender = 'M';
+		this.last= 'Wilson';
+		
+	}
+
+	Student.prototype.age = 15;
+	Student.prototype.name = function() {
+		  return this.first + " " + this.last;
+	};
+
+	var studObj1 = new Student();
+	alert(studObj1.age); 
+	document.write(studObj1.name);
+	var studObj2 = new Student();
+	alert(studObj2.age); 
+	</script>	
+</body>
+</html>

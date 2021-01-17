@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function Person () {
+    this.name = 'John',
+    this.age = 23,
+
+     this.greet = function () {
+        document.write('hello');
+    }
+}
+
+// create objects
+const person1 = new Person();
+const person2 = new Person();
+
+// access properties
+person1.name="ramesh";
+document.write(person1.name+" is eating"); // John
+document.write(person2.name+" is sleeping");  // John
+
+
+</script>
+</body>
+</html>
