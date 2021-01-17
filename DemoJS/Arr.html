@@ -1,0 +1,20 @@
+<script>
+
+    var cats1 = ['Bob','Mini'];
+    document.writeln(cats1.pop());
+    cats1.push("Puff");
+
+   var cats2=['bob',"Puff"];
+    document.write(cats2.shift());
+    cats2.unshift('willy');
+    document.write("<br>"+"List is : "+cats2);
+
+    var cats = [...cats1, ...cats2];
+    document.write("<br>"+cats);
+
+function sum(x,y,z){ return x+y+z;}
+
+const numbers=[1,2,3];
+
+document.write("<br>"+ sum(...numbers));
+</script>

@@ -1,0 +1,43 @@
+<script>
+var pokemon = {
+    fname : 'Pika',
+    lname :'Chu',
+    getPokeName : function(){
+        var fullname =this.fname +" "+this.lname;
+        return fullname;
+    }
+};
+
+let nm = 'Priya';
+nm = 'priyanka';
+let times=3;
+
+if(times>2)
+{
+    var x=10;
+    let hello='HI';
+    console.log(hello);
+}
+console.log(x);
+console.log(hello);
+const n1 ='abc';
+n1='xyz';
+/*
+var pokemonName = function(){
+    console.log(this.getPokeName()+'I choose you');
+
+}
+
+var logPokemon =pokemonName.bind(pokemon);
+logPokemon();
+*/
+
+var pokemonName = function(hobby1,hobby2){
+    console.log(this.getPokeName()+'loves '+hobby1+' and'+hobby2);
+
+}
+pokemonName.call(pokemon,'pseudo','Algorithm');
+
+pokemonName.apply(pokemon,['pseudo','Algorithm']);
+
+</script>

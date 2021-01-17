@@ -1,0 +1,26 @@
+<script>
+function add(x,y)
+{
+    return x+y;
+
+}
+document.write(add(1,2,3,4,5,6));
+
+function xyz(x,y,...z)
+{
+    document.write("<br>"+x + " "+y);
+    document.write("<br>"+z);
+    document.write("<br>"+z[2]);
+    document.write("<br>"+z.length);
+}
+
+xyz("hi","hello","wassup","good evening",'howwd');
+
+function check(x,y=90)
+{
+    document.write("<br>"+x + " "+y);
+
+}
+check(23);
+check(4,5);
+</script>
