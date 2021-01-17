@@ -1,0 +1,15 @@
+<script>
+    var add= function (a,b){return a+b;}
+
+    var sub = function (x,y){return x-y;}
+
+    var handler = function(callback)
+    {
+        var x = 5;
+        var y = 8;
+        return callback(x,y);
+    }
+    console.log(handler(add));
+    console.log(handler(sub));
+
+</script>

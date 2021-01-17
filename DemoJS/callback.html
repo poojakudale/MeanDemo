@@ -1,0 +1,28 @@
+<script>
+
+    var i = 10;
+    function sayHello()
+    {  var x = 5;
+        console.log("Hello");
+    }
+   //callback
+    setTimeout(sayHello,3000);
+    //don't pass the () then after 3 sec nothing will happen
+    setTimeout(sayHello(),3000);
+    //document.write(i);
+  //  document.write(x);
+
+   var ans =( function add()
+    {
+    var cnt = 0;
+   
+     return function (){ cnt += 1;  return cnt;}
+    
+     })();
+
+
+    document.write(ans());
+    document.write(ans());
+    document.write(ans());
+    
+</script>

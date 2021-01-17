@@ -1,0 +1,18 @@
+<script>
+var func = new Function("x","y","return x * y;");
+
+function secondFunc()
+{
+    var result;
+    result = func(10,20);
+    alert(result);
+    console.log(result);
+
+}
+</script>
+
+<p>Click on Button</p>
+
+<form>
+    <input type="button" onclick="secondFunc()" value="Call Function">
+</form>
