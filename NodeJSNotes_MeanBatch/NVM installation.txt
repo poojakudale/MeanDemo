@@ -1,0 +1,12 @@
+Download Node.js from the official Node.js web site: 
+
+https://nodejs.org
+
+OR
+
+https://nodejs.org/en/download/
+
+Download LTS version
+
+open the downloaded file and install.
+

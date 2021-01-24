@@ -1,0 +1,60 @@
+--webpack command
+
+1.Install yarn using the following command:
+>npm i yarn –g
+
+2.Create a new directory and move into the folder:
+>mkdir webpack 
+>cd webpack 
+
+3.Initialize a package.json by running the following command:
+>npm init –y
+
+4.Pull webpack 4 in it.
+>yarn add --dev webpack webpack-dev-server
+
+5.We need webpack-cli also, which lives as a separate package.
+>yarn add webpack webpack-cli --dev
+
+6.Open package.json and add the following build script:
+
+“scripts”: {
+	“build”: “webpack”
+}
+
+7.Close the file and save it
+
+8. Webpack 4 will need an entry point to start building the JavaScript bundle. 
+It will take ./src/index.js as the default entry point.
+
+9. Create a folder named src (inside webpack). Create a JavaScript file inside 
+the src folder named calculate.js and Add the following code in it:
+
+module.exports = { 
+sum: function(a,b) { 
+return a+b 
+}, 
+multiply: function(a,b) {
+ 		return a*b 
+} 
+};
+
+10. Create another JavaScript file named index.js (inside src) and add the following 
+code in it:
+
+var tools = require("./calculate.js"); 
+var value = tools.sum(10,20); 
+console.log("Value: "+value);
+
+11. Run the build using the following command:
+
+>cd src
+>npm run build
+
+12. You will the get the bundle in ~/webpack/dist/main.js.
+
+13. Run the following command:
+
+node index.js
+
+14. You will get the output
