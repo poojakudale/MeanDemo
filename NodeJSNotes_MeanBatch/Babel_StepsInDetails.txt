@@ -1,0 +1,46 @@
+Writing a program in JavaScript to verify implementation of Babel.
+
+Steps :
+
+1. Create a folder named demo which contains a file named index.html and a folder named public. The public folder contains a file named app.js.
+
+2. Run the following command to install Babel:
+
+> npm install -g babel-cli@6.24.1
+
+You can run babel –help to check all the Babel options.
+
+3. Run the following command to set up your project:
+
+> yarn init
+
+Leave all options as default.
+
+4. Run the following command to install Babel presets:
+
+>yarn add babel-preset-es2015 babel-preset-env@1.5.2
+
+5. Create a folder named src containing a file named app.js and This will contain 
+the JS code.
+
+let sum = (a, b) => {
+    console.log(a+b);
+}
+let multiply = (a, b) => {
+    console.log(a*b)
+}
+
+sum(5,6);
+multiply(10,2);
+
+
+6. Executing the program and verifying implementation of Babel
+
+Run the following command in the terminal:
+
+>babel src/app.js --out-file=public/app.js --presets=env,es2015 –watch
+
+7. Open a new terminal and run the following commands:
+
+cd src
+node app.js

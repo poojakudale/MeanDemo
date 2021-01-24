@@ -1,0 +1,17 @@
+Webpack is tool , used to compile javascript modules
+module bundler
+
+
+MODULE
+> Express 
+>Socket.io
+> creating and chating based application
+>Jade
+>mongoDB
+>Blue Bird 
+
+_____________
+
+yarn
+mkdir
+cd
